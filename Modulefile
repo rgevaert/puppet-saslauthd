@@ -1,11 +1,8 @@
 name    'rgevaert-saslauthd'
 version '0.0.1'
-source 'UNKNOWN'
+source 'https://github.com/rgevaert/puppet-saslauthd'
 author 'rgevaert'
-license 'UNKNOWN'
-summary 'UNKNOWN'
-description 'UNKNOWN'
-project_page 'UNKNOWN'
-
-## Add dependencies, if any:
-# dependency 'username/name', '>= 1.2.0'
+license 'GPL v3'
+summary 'Saslauthd module'
+description 'Manage saslauthd on Debian like systems'
+project_page 'https://github.com/rgevaert/puppet-saslauthd'
