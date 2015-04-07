@@ -15,6 +15,7 @@ class saslauthd (
   $threads                  = $saslauthd::params::threads,
   $options                  = $saslauthd::params::options,
   $default_template         = $saslauthd::params::default_template,
+  $socket_dir               = $saslauthd::params::socket_dir,
   $package                  = $saslauthd::params::package,
   $service                  = $saslauthd::params::service,
   $config_file              = $saslauthd::params::config_file,

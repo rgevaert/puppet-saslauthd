@@ -2,11 +2,11 @@ class saslauthd::params {
 
   $start                    = 'yes'
   $version                  = 'installed'
-  $default_template         = 'saslauthd/default-saslauthd.erb'
   $mechanisms               = 'pam'
   $mech_options             = ''
   $threads                  = 5
-  $options                  = '-c -m /var/run/saslauthd'
+  $options                  = '-c'
+  $socket_dir               = '/var/run/saslauthd'
 
   # LDAP mechanism options
   $ldap_auth_method         = ''
@@ -46,10 +46,18 @@ class saslauthd::params {
 
   case $::operatingsystem{
     'ubuntu','debian': {
-      $package      = ['sasl2-bin', 'libsasl2-modules', 'cyrus-sasl2-doc']
-      $service      = 'saslauthd'
-      $config_file  = '/etc/saslauthd.conf'
-      $default_file  = '/etc/default/saslauthd'
+      $package          = ['sasl2-bin', 'libsasl2-modules', 'cyrus-sasl2-doc']
+      $service          = 'saslauthd'
+      $config_file      = '/etc/saslauthd.conf'
+      $default_file     = '/etc/default/saslauthd'
+      $default_template = 'saslauthd/Debian/default-saslauthd.erb'
+    }
+    'redhat','centos': {
+      $package          = [ 'cyrus-sasl', 'cyrus-sasl-ldap', 'cyrus-sasl-lib' ]
+      $service          = 'saslauthd'
+      $config_file      = '/etc/saslauthd.conf'
+      $default_file     = '/etc/sysconfig/saslauthd'
+      $default_template = 'saslauthd/RedHat/default-saslauthd.erb'
     }
     default:{
       fail("UnknownOS: $::operatingsystem")
