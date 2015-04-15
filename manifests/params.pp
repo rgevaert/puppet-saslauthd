@@ -60,7 +60,7 @@ class saslauthd::params {
       $default_template = 'saslauthd/RedHat/default-saslauthd.erb'
     }
     default:{
-      fail("UnknownOS: $::operatingsystem")
+      fail("UnknownOS: ${::operatingsystem}")
     }
   }
 
