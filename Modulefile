@@ -1,8 +1,0 @@
-name    'rgevaert-saslauthd'
-version '0.0.1'
-source 'https://github.com/rgevaert/puppet-saslauthd'
-author 'rgevaert'
-license 'GPL v3'
-summary 'Saslauthd module'
-description 'Manage saslauthd on Debian like systems'
-project_page 'https://github.com/rgevaert/puppet-saslauthd'

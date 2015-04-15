@@ -1,0 +1,25 @@
+{
+  "name": "rgevaert-saslauthd",
+  "version": "0.0.2",
+  "author": "Rudy Gevaert",
+  "license": "GPL v3",
+  "summary": "Saslauthd module",
+  "source": "https://github.com/rgevaert/puppet-saslauthd",
+  "project_page": "https://forge.puppetlabs.com/rgevaert/saslauthd",
+  "issues_url": "https://github.com/rgevaert/puppet-saslauthd/issues",
+  "tags": ["authentication", "cyrus"],
+  "operatingsystem_support": [
+    {
+    "operatingsystem":"RedHat",
+    "operatingsystemrelease":[ "5.0", "6.0" ]
+    },
+    {
+    "operatingsystem": "Ubuntu",
+    "operatingsystemrelease": [ "12.04", "14.04" ]
+    }
+    {
+    "operatingsystem": "Debian",
+    "operatingsystemrelease": [ "6.0", "7.0" ]
+    }
+   ],
+}
