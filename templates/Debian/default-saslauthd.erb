@@ -52,4 +52,4 @@ THREADS=<%= @threads %>
 # information about these options.
 #
 # Example for postfix users: "-c -m /var/spool/postfix/var/run/saslauthd"
-OPTIONS="-O <%= @config_file %> -m <%= @socket_dir %> <%= @options %> <%= @options %>"
+OPTIONS="<%= @config_file_option %>-m <%= @socket_dir %> <%= @options %>"
