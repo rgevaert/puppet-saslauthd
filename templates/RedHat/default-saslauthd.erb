@@ -8,4 +8,4 @@ MECH="<%= @mechanisms %>"
 
 # Additional flags to pass to saslauthd on the command line.  See saslauthd(8)
 # for the list of accepted flags.
-FLAGS="-O <%= @config_file %> <%= @options %>"
+FLAGS="<%= @config_file_option %><%= @options %>"

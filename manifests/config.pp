@@ -5,6 +5,11 @@ class saslauthd::config {
     default => absent
   }
 
+  $config_file_option = $saslauthd::mechanisms ? {
+    'ldap'  => "-O $saslauthd::config_file ",
+    default => ""
+  }
+
   file {
     'saslauthd.conf':
       ensure  => $ensure,
