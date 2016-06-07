@@ -1,0 +1,160 @@
+# Created using puppet-retrospec - https://github.com/nwops/puppet-retrospec
+# This schema file can be used to validate hiera data
+# http://www.kuwata-lab.com/kwalify/ruby/users-guide.01.html#schema
+# To validate your hiera data against this schema install the kwalify gem
+# 1. gem install kwalify
+# 2. kwalify -lf /home/rgevaert/Vcs/puppet-saslauthd/puppet-saslauthd_schema.yaml hiera_data_file.yaml
+# By default this schema is generic and only covers basic parameter types.
+# You should update the schema to match your expected data types in your puppet classes
+# or anywhere else you call hiera using the hiera() function.
+# This schema contains 47 entries.
+--- 
+  type: map
+  mapping: 
+    hostclass: 
+      type: map
+      mapping: 
+        "saslauthd::start": 
+          type: any
+          required: false
+        "saslauthd::version": 
+          type: any
+          required: false
+        "saslauthd::mechanisms": 
+          type: any
+          required: false
+        "saslauthd::mech_options": 
+          type: any
+          required: false
+        "saslauthd::threads": 
+          type: any
+          required: false
+        "saslauthd::options": 
+          type: any
+          required: false
+        "saslauthd::default_template": 
+          type: any
+          required: false
+        "saslauthd::socket_dir": 
+          type: any
+          required: false
+        "saslauthd::package": 
+          type: any
+          required: false
+        "saslauthd::service": 
+          type: any
+          required: false
+        "saslauthd::config_file": 
+          type: any
+          required: false
+        "saslauthd::default_file": 
+          type: any
+          required: false
+        "saslauthd::ldap_auth_method": 
+          type: any
+          required: false
+        "saslauthd::ldap_bind_dn": 
+          type: any
+          required: false
+        "saslauthd::ldap_bind_pw": 
+          type: any
+          required: false
+        "saslauthd::ldap_default_realm": 
+          type: any
+          required: false
+        "saslauthd::ldap_deref": 
+          type: any
+          required: false
+        "saslauthd::ldap_filter": 
+          type: any
+          required: false
+        "saslauthd::ldap_group_attr": 
+          type: any
+          required: false
+        "saslauthd::ldap_group_dn": 
+          type: any
+          required: false
+        "saslauthd::ldap_group_pw": 
+          type: any
+          required: false
+        "saslauthd::ldap_group_filter": 
+          type: any
+          required: false
+        "saslauthd::ldap_group_match_method": 
+          type: any
+          required: false
+        "saslauthd::ldap_group_search_base": 
+          type: any
+          required: false
+        "saslauthd::ldap_group_scope": 
+          type: any
+          required: false
+        "saslauthd::ldap_password": 
+          type: any
+          required: false
+        "saslauthd::ldap_password_attr": 
+          type: any
+          required: false
+        "saslauthd::ldap_referrals": 
+          type: any
+          required: false
+        "saslauthd::ldap_restart": 
+          type: any
+          required: false
+        "saslauthd::ldap_id": 
+          type: any
+          required: false
+        "saslauthd::ldap_authz_id": 
+          type: any
+          required: false
+        "saslauthd::ldap_mech": 
+          type: any
+          required: false
+        "saslauthd::ldap_realm": 
+          type: any
+          required: false
+        "saslauthd::ldap_scope": 
+          type: any
+          required: false
+        "saslauthd::ldap_search_base": 
+          type: any
+          required: false
+        "saslauthd::ldap_servers": 
+          type: any
+          required: false
+        "saslauthd::ldap_start_tls": 
+          type: any
+          required: false
+        "saslauthd::ldap_time_limit": 
+          type: any
+          required: false
+        "saslauthd::ldap_timeout": 
+          type: any
+          required: false
+        "saslauthd::ldap_tls_check_peer": 
+          type: any
+          required: false
+        "saslauthd::ldap_tls_cacert_file": 
+          type: any
+          required: false
+        "saslauthd::ldap_tls_cacert_dir": 
+          type: any
+          required: false
+        "saslauthd::ldap_tls_ciphers": 
+          type: any
+          required: false
+        "saslauthd::ldap_tls_cert": 
+          type: any
+          required: false
+        "saslauthd::ldap_tls_key": 
+          type: any
+          required: false
+        "saslauthd::ldap_use_sasl": 
+          type: any
+          required: false
+        "saslauthd::ldap_version": 
+          type: any
+          required: false
+    definition: 
+      type: map
+      mapping: {}

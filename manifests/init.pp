@@ -59,8 +59,8 @@ class saslauthd (
 
   ) inherits saslauthd::params {
 
-  class{'saslauthd::package':} ~>
-  class{'saslauthd::config':} ~>
-  class{'saslauthd::service':}
+  class{'::saslauthd::package':} ~>
+  class{'::saslauthd::config':} ~>
+  class{'::saslauthd::service':}
 
 }

@@ -1,0 +1,5 @@
+fixtures:
+    symlinks:
+     saslauthd: "#{source_dir}"
+    repositories:
+    forge_modules:

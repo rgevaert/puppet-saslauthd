@@ -6,8 +6,8 @@ class saslauthd::config {
   }
 
   $config_file_option = $saslauthd::mechanisms ? {
-    'ldap'  => "-O $saslauthd::config_file ",
-    default => ""
+    'ldap'  => "-O ${saslauthd::config_file} ",
+    default => ''
   }
 
   file {

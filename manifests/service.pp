@@ -7,9 +7,9 @@ class saslauthd::service {
 
   service {
     'saslauthd':
-      ensure      => $ensure,
-      hasstatus   => false,
-      hasrestart  => true,
+      ensure     => $ensure,
+      hasstatus  => false,
+      hasrestart => true,
   }
 
 }
