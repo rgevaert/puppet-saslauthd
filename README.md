@@ -1,4 +1,12 @@
+# puppet-saslauthd
 This is the saslauthd module.
+
+##  Build status
+
+
+[![Build Status](https://travis-ci.org/rgevaert/puppet-saslauthd.svg?branch=master)](https://travis-ci.org/rgevaert/puppet-saslauthd)
+
+##  Usuage
 
 You can manage saslauthd on Debian like systems.
 
@@ -30,3 +38,7 @@ To not start saslauthd use:
   }
 
 You can set many other parameters, have a look at the init.pp file.
+
+## Development
+
+See DEVELOPMENT.md.  When submitting a pull request please provide a rspec or beaker test.
