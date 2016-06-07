@@ -18,6 +18,7 @@ class saslauthd::params {
   $ldap_group_attr          = ''
   $ldap_group_dn            = ''
   $ldap_group_filter        = ''
+  $ldap_group_pw            = ''
   $ldap_group_match_method  = ''
   $ldap_group_search_base   = ''
   $ldap_group_scope         = ''
