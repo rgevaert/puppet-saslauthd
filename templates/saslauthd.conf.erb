@@ -1,103 +1,103 @@
 # Managed with Puppet
-<% if @ldap_auth_method != '' -%>
-ldap_auth_method: <%= @ldap_auth_method %>
+<% if scope.lookupvar('saslauthd::ldap_auth_method') != '' -%>
+ldap_auth_method: <%= scope.lookupvar('saslauthd::ldap_auth_method') %>
 <% end -%>
-<% if @ldap_bind_dn != '' -%>
-ldap_bind_dn: <%= @ldap_bind_dn %>
+<% if scope.lookupvar('saslauthd::ldap_bind_dn') != '' -%>
+ldap_bind_dn: <%= scope.lookupvar('saslauthd::ldap_bind_dn') %>
 <% end -%>
-<% if @ldap_bind_pw != '' -%>
-ldap_bind_pw: <%= @ldap_bind_pw %>
+<% if scope.lookupvar('saslauthd::ldap_bind_pw') != '' -%>
+ldap_bind_pw: <%= scope.lookupvar('saslauthd::ldap_bind_pw') %>
 <% end -%>
-<% if @ldap_default_realm != '' -%>
-ldap_default_realm: <%= @ldap_default_realm %>
+<% if scope.lookupvar('saslauthd::ldap_default_realm') != '' -%>
+ldap_default_realm: <%= scope.lookupvar('saslauthd::ldap_default_realm') %>
 <% end -%>
-<% if @ldap_deref != '' -%>
-ldap_deref: <%= @ldap_deref %>
+<% if scope.lookupvar('saslauthd::ldap_deref') != '' -%>
+ldap_deref: <%= scope.lookupvar('saslauthd::ldap_deref') %>
 <% end -%>
-<% if @ldap_filter != '' -%>
-ldap_filter: <%= @ldap_filter %>
+<% if scope.lookupvar('saslauthd::ldap_filter') != '' -%>
+ldap_filter: <%= scope.lookupvar('saslauthd::ldap_filter') %>
 <% end -%>
-<% if @ldap_group_attr != '' -%>
-ldap_group_attr: <%= @ldap_group_attr %>
+<% if scope.lookupvar('saslauthd::ldap_group_attr') != '' -%>
+ldap_group_attr: <%= scope.lookupvar('saslauthd::ldap_group_attr') %>
 <% end -%>
-<% if @ldap_group_dn != '' -%>
-ldap_group_dn: <%= @ldap_group_dn %>
+<% if scope.lookupvar('saslauthd::ldap_group_dn') != '' -%>
+ldap_group_dn: <%= scope.lookupvar('saslauthd::ldap_group_dn') %>
 <% end -%>
-<% if @ldap_group_filter != '' -%>
-ldap_group_filter: <%= @ldap_group_filter %>
+<% if scope.lookupvar('saslauthd::ldap_group_filter') != '' -%>
+ldap_group_filter: <%= scope.lookupvar('saslauthd::ldap_group_filter') %>
 <% end -%>
-<% if @ldap_group_match_method != '' -%>
-ldap_group_match_method: <%= @ldap_group_match_method %>
+<% if scope.lookupvar('saslauthd::ldap_group_match_method') != '' -%>
+ldap_group_match_method: <%= scope.lookupvar('saslauthd::ldap_group_match_method') %>
 <% end -%>
-<% if @ldap_group_search_base != '' -%>
-ldap_group_search_base: <%= @ldap_group_search_base %>
+<% if scope.lookupvar('saslauthd::ldap_group_search_base') != '' -%>
+ldap_group_search_base: <%= scope.lookupvar('saslauthd::ldap_group_search_base') %>
 <% end -%>
-<% if @ldap_group_scope != '' -%>
-ldap_group_scope: <%= @ldap_group_scope %>
+<% if scope.lookupvar('saslauthd::ldap_group_scope') != '' -%>
+ldap_group_scope: <%= scope.lookupvar('saslauthd::ldap_group_scope') %>
 <% end -%>
-<% if @ldap_password != '' -%>
-ldap_password: <%= @ldap_password %>
+<% if scope.lookupvar('saslauthd::ldap_password') != '' -%>
+ldap_password: <%= scope.lookupvar('saslauthd::ldap_password') %>
 <% end -%>
-<% if @ldap_password_attr != '' -%>
-ldap_password_attr: <%= @ldap_password_attr %>
+<% if scope.lookupvar('saslauthd::ldap_password_attr') != '' -%>
+ldap_password_attr: <%= scope.lookupvar('saslauthd::ldap_password_attr') %>
 <% end -%>
-<% if @ldap_referrals != '' -%>
-ldap_referrals: <%= @ldap_referrals %>
+<% if scope.lookupvar('saslauthd::ldap_referrals') != '' -%>
+ldap_referrals: <%= scope.lookupvar('saslauthd::ldap_referrals') %>
 <% end -%>
-<% if @ldap_restart != '' -%>
-ldap_restart: <%= @ldap_restart %>
+<% if scope.lookupvar('saslauthd::ldap_restart') != '' -%>
+ldap_restart: <%= scope.lookupvar('saslauthd::ldap_restart') %>
 <% end -%>
-<% if @ldap_id != '' -%>
-ldap_id: <%= @ldap_id %>
+<% if scope.lookupvar('saslauthd::ldap_id') != '' -%>
+ldap_id: <%= scope.lookupvar('saslauthd::ldap_id') %>
 <% end -%>
-<% if @ldap_authz_id != '' -%>
-ldap_authz_id: <%= @ldap_authz_id %>
+<% if scope.lookupvar('saslauthd::ldap_authz_id') != '' -%>
+ldap_authz_id: <%= scope.lookupvar('saslauthd::ldap_authz_id') %>
 <% end -%>
-<% if @ldap_mech != '' -%>
-ldap_mech: <%= @ldap_mech %>
+<% if scope.lookupvar('saslauthd::ldap_mech') != '' -%>
+ldap_mech: <%= scope.lookupvar('saslauthd::ldap_mech') %>
 <% end -%>
-<% if @ldap_realm != '' -%>
-ldap_realm: <%= @ldap_realm %>
+<% if scope.lookupvar('saslauthd::ldap_realm') != '' -%>
+ldap_realm: <%= scope.lookupvar('saslauthd::ldap_realm') %>
 <% end -%>
-<% if @ldap_scope != '' -%>
-ldap_scope: <%= @ldap_scope %>
+<% if scope.lookupvar('saslauthd::ldap_scope') != '' -%>
+ldap_scope: <%= scope.lookupvar('saslauthd::ldap_scope') %>
 <% end -%>
-<% if @ldap_search_base != '' -%>
-ldap_search_base: <%= @ldap_search_base %>
+<% if scope.lookupvar('saslauthd::ldap_search_base') != '' -%>
+ldap_search_base: <%= scope.lookupvar('saslauthd::ldap_search_base') %>
 <% end -%>
-<% if @ldap_servers != '' -%>
-ldap_servers: <%= @ldap_servers %>
+<% if scope.lookupvar('saslauthd::ldap_servers') != '' -%>
+ldap_servers: <%= scope.lookupvar('saslauthd::ldap_servers') %>
 <% end -%>
-<% if @ldap_start_tls != '' -%>
-ldap_start_tls: <%= @ldap_start_tls %>
+<% if scope.lookupvar('saslauthd::ldap_start_tls') != '' -%>
+ldap_start_tls: <%= scope.lookupvar('saslauthd::ldap_start_tls') %>
 <% end -%>
-<% if @ldap_time_limit != '' -%>
-ldap_time_limit: <%= @ldap_time_limit %>
+<% if scope.lookupvar('saslauthd::ldap_time_limit') != '' -%>
+ldap_time_limit: <%= scope.lookupvar('saslauthd::ldap_time_limit') %>
 <% end -%>
-<% if @ldap_timeout != '' -%>
-ldap_timeout: <%= @ldap_timeout %>
+<% if scope.lookupvar('saslauthd::ldap_timeout') != '' -%>
+ldap_timeout: <%= scope.lookupvar('saslauthd::ldap_timeout') %>
 <% end -%>
-<% if @ldap_tls_check_peer != '' -%>
-ldap_tls_check_peer: <%= @ldap_tls_check_peer %>
+<% if scope.lookupvar('saslauthd::ldap_tls_check_peer') != '' -%>
+ldap_tls_check_peer: <%= scope.lookupvar('saslauthd::ldap_tls_check_peer') %>
 <% end -%>
-<% if @ldap_tls_cacert_file != '' -%>
-ldap_tls_cacert_file: <%= @ldap_tls_cacert_file %>
+<% if scope.lookupvar('saslauthd::ldap_tls_cacert_file') != '' -%>
+ldap_tls_cacert_file: <%= scope.lookupvar('saslauthd::ldap_tls_cacert_file') %>
 <% end -%>
-<% if @ldap_tls_cacert_dir != '' -%>
-ldap_tls_cacert_dir: <%= @ldap_tls_cacert_dir %>
+<% if scope.lookupvar('saslauthd::ldap_tls_cacert_dir') != '' -%>
+ldap_tls_cacert_dir: <%= scope.lookupvar('saslauthd::ldap_tls_cacert_dir') %>
 <% end -%>
-<% if @ldap_tls_ciphers != '' -%>
-ldap_tls_ciphers: <%= @ldap_tls_ciphers %>
+<% if scope.lookupvar('saslauthd::ldap_tls_ciphers') != '' -%>
+ldap_tls_ciphers: <%= scope.lookupvar('saslauthd::ldap_tls_ciphers') %>
 <% end -%>
-<% if @ldap_tls_cert != '' -%>
-ldap_tls_cert: <%= @ldap_tls_cert %>
+<% if scope.lookupvar('saslauthd::ldap_tls_cert') != '' -%>
+ldap_tls_cert: <%= scope.lookupvar('saslauthd::ldap_tls_cert') %>
 <% end -%>
-<% if @ldap_tls_key != '' -%>
-ldap_tls_key: <%= @ldap_tls_key %>
+<% if scope.lookupvar('saslauthd::ldap_tls_key') != '' -%>
+ldap_tls_key: <%= scope.lookupvar('saslauthd::ldap_tls_key') %>
 <% end -%>
-<% if @ldap_use_sasl != '' -%>
-ldap_use_sasl: <%= @ldap_use_sasl %>
+<% if scope.lookupvar('saslauthd::ldap_use_sasl') != '' -%>
+ldap_use_sasl: <%= scope.lookupvar('saslauthd::ldap_use_sasl') %>
 <% end -%>
-<% if @ldap_version != '' -%>
-ldap_version: <%= @ldap_version %>
+<% if scope.lookupvar('saslauthd::ldap_version') != '' -%>
+ldap_version: <%= scope.lookupvar('saslauthd::ldap_version') %>
 <% end -%>

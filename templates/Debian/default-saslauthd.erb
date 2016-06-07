@@ -4,7 +4,7 @@
 #
 
 # Should saslauthd run automatically on startup? (default: no)
-START=<%= @start %>
+START=<%= scope.lookupvar('saslauthd::start') %>
 
 # Description of this saslauthd instance. Recommended.
 # (suggestion: SASL Authentication Daemon)
@@ -29,15 +29,15 @@ NAME="saslauthd"
 # for more information.
 #
 # Example: MECHANISMS="pam"
-MECHANISMS="<%= @mechanisms %>"
+MECHANISMS="<%= scope.lookupvar('saslauthd::mechanisms') %>"
 
 # Additional options for this mechanism. (default: none)
 # See the saslauthd man page for information about mech-specific options.
-MECH_OPTIONS="<%= @mech_options %>"
+MECH_OPTIONS="<%= scope.lookupvar('saslauthd::mech_options') %>"
 
 # How many saslauthd processes should we run? (default: 5)
 # A value of 0 will fork a new process for each connection.
-THREADS=<%= @threads %>
+THREADS=<%= scope.lookupvar('saslauthd::threads') %>
 
 # Other options (default: -c -m /var/run/saslauthd)
 # Note: You MUST specify the -m option or saslauthd won't run!
@@ -52,4 +52,4 @@ THREADS=<%= @threads %>
 # information about these options.
 #
 # Example for postfix users: "-c -m /var/spool/postfix/var/run/saslauthd"
-OPTIONS="<%= @config_file_option %>-m <%= @socket_dir %> <%= @options %>"
+OPTIONS="<%= scope.lookupvar('saslauthd::config::config_file_option') %>-m <%= scope.lookupvar('saslauthd::socket_dir') %> <%= scope.lookupvar('saslauthd::options') %>"
