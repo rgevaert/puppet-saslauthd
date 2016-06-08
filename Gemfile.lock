@@ -37,7 +37,7 @@ GEM
       rsync (~> 1.0.9)
       stringify-hash (~> 0.0)
       unf (~> 0.1)
-    beaker-answers (0.5.1)
+    beaker-answers (0.5.2)
       hocon (~> 0.9.5)
       require_all (~> 1.3.2)
       stringify-hash (~> 0.0.0)
@@ -207,7 +207,7 @@ GEM
     guard-rake (1.0.0)
       guard
       rake
-    hiera (1.3.4)
+    hiera (3.2.0)
       json_pure
     highline (1.7.8)
     hocon (0.9.5)
@@ -244,7 +244,7 @@ GEM
       spdx-licenses (~> 1.0)
     method_source (0.8.2)
     mime-types (2.99.2)
-    mini_portile2 (2.0.0)
+    mini_portile2 (2.1.0)
     minitest (5.9.0)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
@@ -258,20 +258,23 @@ GEM
     net-ssh (2.9.4)
     net-telnet (0.1.1)
     netrc (0.11.0)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     notiffany (0.1.0)
       nenv (~> 0.1)
       shellany (~> 0.0)
     open_uri_redirections (0.2.1)
     os (0.9.6)
+    pkg-config (1.1.7)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puppet (3.8.7)
-      facter (> 1.6, < 3)
-      hiera (~> 1.0)
+    puppet (4.5.1)
+      CFPropertyList (~> 2.2.6)
+      facter (> 2.0, < 4)
+      hiera (>= 2.0, < 4)
       json_pure
     puppet-blacksmith (3.3.1)
       puppet (>= 2.7.16)
@@ -382,8 +385,9 @@ DEPENDENCIES
   beaker-rspec
   guard-rake
   hiera-puppet-helper!
+  listen (<= 3.0.6)
   metadata-json-lint
-  puppet (~> 3.8.3)
+  puppet (~> 4.5.0)
   puppet-blacksmith
   puppet-lint
   puppet-syntax
@@ -398,4 +402,4 @@ DEPENDENCIES
   vagrant-wrapper
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
